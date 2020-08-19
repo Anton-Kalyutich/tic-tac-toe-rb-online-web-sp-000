@@ -85,7 +85,7 @@ def play(board)
     turn(board)
   end
   if won?(board)
-    
+    puts "Congrats!"
   elsif draw?(board)
     puts "Cat's Game!"
   end
