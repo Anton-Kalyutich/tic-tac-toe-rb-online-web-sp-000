@@ -83,6 +83,6 @@ end
 def play(board)
   until over?(board) do
     turn(board)
-    
+  end
 end
 end
