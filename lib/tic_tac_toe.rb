@@ -47,13 +47,7 @@ def turn(board)
 end
 
 def turn_count(board)
-  count = 0
-  board.each do |cell|
-    if cell == "X" || cell == "O"
-      count += 1
-    end
-  end
-  count
+  board.count {|cell| cell == "X" || cell == "O"}
 end
 
 def current_player(board)
